@@ -1,0 +1,95 @@
+<resources>
+    <!-- Common -->
+    <string name="confirm">확인</string>
+    <string name="cancel">취소</string>
+
+    <!-- Menu -->
+    <string name="menu_scan">스캔</string>
+    <string name="menu_setting">설정</string>
+    <string name="menu_logging">로깅 선택</string>
+    <string name="menu_notifications">알림</string>
+
+    <!-- Bottom Nav -->
+    <string name="nav_driver">운전자 상태</string>
+    <string name="nav_data">데이터 상태</string>
+    <string name="nav_gps">GPS 맵</string>
+    <string name="nav_imu">모션 센서</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Scan device -->
+    <string name="scan_scan">장치 찾기</string>
+    <string name="scan_select_device">장치 선택</string>
+    <string name="scan_scanning">검색중</string>
+    <string name="scan_cancel">취소</string>
+    <string name="scan_unkown">알수없는 장치</string>
+
+    <!-- Permission string -->
+    <string name="permission_internet_denied">인터넷 연결안됨</string>
+    <string name="permission_bluetooth_denied">블루투스 연결안됨</string>
+    <string name="permission_bluetooth_admin_denied">블루투스 연결안됨</string>
+    <string name="permission_fine_location_denied">GPS 연결안됨(fine)</string>
+    <string name="permission_coarse_location_denied">GPS 연결안됨(coarse)</string>
+    <string name="permission_vibrate_denied">IMU 연결안됨</string>
+    <string name="permission_wake_lock_denied">IMU 연결안됨</string>
+    <string name="permission_read_ext_storage_denied">EXT 읽기 연결안됨</string>
+    <string name="permission_write_ext_storage_denied">EXT 쓰기 연결안됨</string>
+
+    <string name="permission_int_access">인터넷 연결됨</string>
+    <string name="permission_ble_access">BLE 연결됨</string>
+    <string name="permission_gps_access">GPS 연결됨</string>
+    <string name="permission_imu_access">IMU 연결됨</string>
+    <string name="permission_ext_access">EXT 연결됨</string>
+
+    <string name="permission_int_denied">INT 실패</string>
+    <string name="permission_ble_denied">BLE 실패</string>
+    <string name="permission_gps_denied">GPS 실패</string>
+    <string name="permission_imu_denied">IMU 실패</string>
+    <string name="permission_ext_denied">EXT 실패</string>
+
+    <!-- Support -->
+    <string name="ble_not_supported">BLE를 지원하지 않는 기기입니다.</string>
+
+    <!-- Driver Fragment -->
+    <string name="today_Date">오늘 날짜: </string>
+    <string name="current_Time">현재 시간: </string>
+    <string name="driving_Time">로깅 시간: </string>
+    <string name="logging_not_record">로깅 시작</string>
+    <string name="logging_record">로깅 중</string>
+    <string name="driving_result">운전결과: </string>
+
+    <string name="confidence_1">CON1:</string>
+    <string name="confidence_2">CON2:</string>
+    <string name="confidence_3">CON3:</string>
+    <string name="confidence_4">CON4:</string>
+    <string name="confidence_5">CON5:</string>
+    <string name="confidence_6">CON6:</string>
+    <string name="confidence_7">CON7:</string>
+    <string name="confidence_8">CON8:</string>
+
+    <!-- OBD Data Fragment -->
+    <string name="obd_rx_data">BLE 데이터 HEX:</string>
+    <string name="obd_odometer">오도미터: </string>
+    <string name="obd_steer_wheel">스티어링 각도: </string>
+    <string name="obd_brake">브레이크 압력: </string>
+    <string name="obd_blinker">방향지시등: </string>
+    <string name="obd_gear_position">기어위치: </string>
+    <string name="obd_speed">OBD 속도: </string>
+    <string name="obd_seat_belt">안전벨트: </string>
+    <string name="obd_fl_speed">전방 좌측 휠 속도: </string>
+    <string name="obd_fr_speed">전방 우측 휠 속도: </string>
+    <string name="obd_rl_speed">후방 좌측 휠 속도: </string>
+    <string name="obd_rr_speed">후방 우측 휠 속도: </string>
+    <string name="obd_accel">Accel: </string>
+    <string name="obd_throtle">Throtle: </string>
+    <string name="obd_longitudinal">종 방향 센서: </string>
+    <string name="obd_lateral">Lateral: </string>
+    <string name="obd_yaw">Yaw rate: </string>
+    <string name="obd_result">Driver result: </string>
+
+    <!-- GPS Fragment -->
+    <string name="gps_latitude">위도: </string>
+    <string name="gps_longitude">경도: </string>
+    <string name="gps_heading_angle">해딩각도: </string>
+</resources>

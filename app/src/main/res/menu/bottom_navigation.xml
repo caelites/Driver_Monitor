@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_driver"
+        android:icon="@drawable/ic_driver_black_24dp"
+        android:title="@string/nav_driver" />
+
+    <item
+        android:id="@+id/navigation_data"
+        android:icon="@drawable/ic_data_black_24dp"
+        android:title="@string/nav_data" />
+
+    <item
+        android:id="@+id/navigation_gps"
+        android:icon="@drawable/ic_gps_black_24dp"
+        android:title="@string/nav_gps" />
+
+    <item
+        android:id="@+id/navigation_imu"
+        android:icon="@drawable/ic_motion_black_24dp"
+        android:title="@string/nav_imu" />
+
+</menu>

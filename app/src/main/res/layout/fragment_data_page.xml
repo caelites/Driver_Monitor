@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kr.re.eslab.konanalysis.View.Fragments.DataFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="@dimen/margin_tiny">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="left"-->
+<!--                    android:text="@string/obd_rx_data"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="24dp"-->
+<!--                    android:textColor="@color/colorTextDark"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/obd_rx_data"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="right|center"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textColor="@color/colorTextGray"/>-->
+
+<!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_tiny">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/obd_odometer"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:textColor="@color/colorTextDark"/>
+
+                <TextView
+                    android:id="@+id/obd_odometer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="@color/colorTextGray"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_tiny">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/obd_steer_wheel"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:textColor="@color/colorTextDark"/>
+
+                <TextView
+                    android:id="@+id/obd_steer_wheel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="@color/colorTextGray"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_tiny">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/obd_brake"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:textColor="@color/colorTextDark"/>
+
+                <TextView
+                    android:id="@+id/obd_brake"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="@color/colorTextGray"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_tiny">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/obd_blinker"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:textColor="@color/colorTextDark"/>
+
+                <TextView
+                    android:id="@+id/obd_blinker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="@color/colorTextGray"/>
+
+            </LinearLayout>
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="@dimen/margin_tiny">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="left"-->
+<!--                    android:text="@string/obd_speed"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="24dp"-->
+<!--                    android:textColor="@color/colorTextDark"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/obd_speed"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="right|center"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textColor="@color/colorTextGray"/>-->
+
+<!--            </LinearLayout>-->
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_tiny">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/obd_gear_position"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:textColor="@color/colorTextDark"/>
+
+                <TextView
+                    android:id="@+id/obd_gear_position"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="@color/colorTextGray"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_tiny">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/obd_seat_belt"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:textColor="@color/colorTextDark"/>
+
+                <TextView
+                    android:id="@+id/obd_seat_belt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="@color/colorTextGray"/>
+
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="@dimen/margin_tiny">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="left"-->
+<!--                    android:text="@string/obd_fl_speed"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="24dp"-->
+<!--                    android:textColor="@color/colorTextDark"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/obd_fl_spped"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="right|center"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textColor="@color/colorTextGray"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="@dimen/margin_tiny">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="left"-->
+<!--                    android:text="@string/obd_fr_speed"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="24dp"-->
+<!--                    android:textColor="@color/colorTextDark"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/obd_fr_spped"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="right|center"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textColor="@color/colorTextGray"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="@dimen/margin_tiny">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="left"-->
+<!--                    android:text="@string/obd_rl_speed"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="24dp"-->
+<!--                    android:textColor="@color/colorTextDark"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/obd_rl_spped"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="right|center"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textColor="@color/colorTextGray"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="@dimen/margin_tiny">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="left"-->
+<!--                    android:text="@string/obd_rr_speed"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="24dp"-->
+<!--                    android:textColor="@color/colorTextDark"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/obd_rr_spped"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="right|center"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textColor="@color/colorTextGray"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="@dimen/margin_tiny">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="left"-->
+<!--                    android:text="@string/obd_accel"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="24dp"-->
+<!--                    android:textColor="@color/colorTextDark"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/obd_accel"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="right|center"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textColor="@color/colorTextGray"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="@dimen/margin_tiny">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="left"-->
+<!--                    android:text="@string/obd_throtle"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="24dp"-->
+<!--                    android:textColor="@color/colorTextDark"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/obd_throtle"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="right|center"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textColor="@color/colorTextGray"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="@dimen/margin_tiny">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="left"-->
+<!--                    android:text="@string/obd_lateral"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="24dp"-->
+<!--                    android:textColor="@color/colorTextDark"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/obd_lateral"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="right|center"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textColor="@color/colorTextGray"-->
+<!--                    tools:ignore="DuplicateIds" />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="@dimen/margin_tiny">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="left"-->
+<!--                    android:text="@string/obd_longitudinal"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="24dp"-->
+<!--                    android:textColor="@color/colorTextDark"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/obd_longitudinal"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="right|center"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textColor="@color/colorTextGray"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="@dimen/margin_tiny">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="left"-->
+<!--                    android:text="@string/obd_yaw"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="24dp"-->
+<!--                    android:textColor="@color/colorTextDark"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/obd_yaw"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="right|center"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textColor="@color/colorTextGray"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="@dimen/margin_tiny">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="left"-->
+<!--                    android:text="@string/obd_result"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="24dp"-->
+<!--                    android:textColor="@color/colorTextDark"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/obd_obd_result"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="right|center"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textColor="@color/colorTextGray"/>-->
+
+<!--            </LinearLayout>-->
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

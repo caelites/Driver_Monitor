@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#47C83E</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- Text -->
+    <color name="colorTextBlack">#232323</color>
+    <color name="colorTextGray">#444444</color>
+    <color name="colorTextWhite">#FFFFFF</color>
+    <color name="colorTextDaisy">#F1F1F1</color>
+    <color name="colorTextRed">#FF0000</color>
+    <color name="colorTextScarlet">#FF5E00</color>
+
+    <!-- Background -->
+    <color name="colorTextDark">#000000</color>
+    <color name="colorThemeWhite">#F6F6F6</color>
+
+    <!-- Button -->
+    <color name="colorRecord">#FF0000</color>
+    <color name="colorNotRecord">#F1F1F1</color>
+
+    <!-- Fragment -->
+</resources>

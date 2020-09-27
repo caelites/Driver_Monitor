@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.example.konanalysis">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_api"/>
+
+        <activity
+            android:name="kr.re.eslab.konanalysis.View.Activitys.DeviceScanActivity"
+            android:theme="@android:style/Theme.Material.Dialog.NoActionBar"/>
+
+        <!--
+         Main music service, provides media browsing and media playback services to
+         consumers through MediaBrowserService and MediaSession. Consumers connect to it through
+         MediaBrowser (for browsing) and MediaController (for playback control)
+        -->
+        <activity
+            android:name="kr.re.eslab.konanalysis.View.Activitys.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.car.application"
+            android:resource="@xml/automotive_app_desc" />
+        <meta-data
+            android:name="com.google.android.gms.car.application.theme"
+            android:resource="@style/CarTheme" />
+        <!--
+             Use this meta data to override the theme from which Android Auto will
+             look for colors. If you don't set this, Android Auto will look
+             for color attributes in your application theme.
+        -->
+        <service
+            android:name="kr.re.eslab.konanalysis.Model.Services.AutoServices.DataCollectState"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.media.browse.MediaBrowserService" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="kr.re.eslab.konanalysis.Model.Services.AutoServices.DataViewService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.media.browse.MediaBrowserService" />
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:name="kr.re.eslab.konanalysis.Model.Services.BleServices.BluetoothLeService" />
+        <service android:enabled="true" android:name="kr.re.eslab.konanalysis.Model.Services.GpsServices.GpsService" />
+    </application>
+
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <dist:module dist:instant="true" />
+
+</manifest>
